@@ -44,6 +44,9 @@ triage_agent = Agent(
 
 
 async def main():
+    #user_query = "Sourav Ganguly"
+    #user_query = "London"
+  
     user_query = "2N/3D itinerary for Kolkata, India"
     result = Runner.run_streamed(triage_agent, user_query)
     async for event in result.stream_events():
