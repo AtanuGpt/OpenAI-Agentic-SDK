@@ -1,6 +1,6 @@
 # OpenAI-Agentic-SDK
 
-# 🧠 Multi-Agent POC with OpenAI Agent SDK
+# 🧠 Multi-Agent DEMO with OpenAI Agent SDK
 
 This repository demonstrates a modular, multi-agent proof-of-concept (POC) using the **OpenAI Agent SDK**. The system showcases how specialized agents can collaborate to solve domain-specific tasks such as retrieving a cricketer's birthplace, suggesting sightseeing spots, and generating budget-friendly travel itineraries.
 
