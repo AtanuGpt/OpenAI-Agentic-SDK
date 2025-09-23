@@ -1,5 +1,5 @@
 from dotenv import load_dotenv
-from agents import Agent, Runner, trace, function_tool
+from agents import Agent, Runner
 from openai.types.responses import ResponseTextDeltaEvent
 import asyncio
 
