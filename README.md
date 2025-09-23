@@ -27,6 +27,7 @@ Each agent is powered by `gpt-4o-mini` and designed with a focused instruction s
 - Real-time streaming of responses
 - Asynchronous execution
 - Easily extensible architecture
+- Agent workflow graph (Download GraphViz from https://graphviz.org/download/)
 
 ---
 
