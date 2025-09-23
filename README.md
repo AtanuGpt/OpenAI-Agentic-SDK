@@ -4,6 +4,8 @@
 
 This repository demonstrates a modular, multi-agent proof-of-concept (POC) using the **OpenAI Agent SDK**. The system showcases how specialized agents can collaborate to solve domain-specific tasks such as retrieving a cricketer's birthplace, suggesting sightseeing spots, and generating budget-friendly travel itineraries.
 
+<img width="710" height="409" alt="Capture" src="https://github.com/user-attachments/assets/1935fddb-30c7-43e8-9bab-9950a2fd7268" />
+
 ---
 
 ## 🚀 Project Overview
