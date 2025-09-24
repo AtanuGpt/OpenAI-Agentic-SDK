@@ -1,3 +1,5 @@
 dotenv
+openai
 openai-agents
 openai-agents[viz]
+openai-agents[litellm]
