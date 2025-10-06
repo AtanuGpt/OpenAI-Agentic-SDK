@@ -9,8 +9,8 @@ load_dotenv(override=True)
 instructions_agent01 = "You are an intelligent agent who gets the precise city and country of birth of any cricket player. " \
                        "Just give the name of the city and country only and nothing else."
 
-instructions_agent02 = "You are a speclized agent in giving expert budget friendly travel itinerary for a given place or country. " \
-                       "Recommend places, hotels, transport and restaurants suggesations which will in making the plan better"
+instructions_agent02 = "You are a specialized agent in giving expert budget friendly travel itinerary for a given place or country. " \
+                       "Only recommend places, hotels, transport and restaurants suggesations which will in making the plan better; "                        
 
 agent01 = Agent( 
     name="CricketerPlaceOfBirth", 
@@ -35,7 +35,7 @@ async def fetch_weather(location:str) -> str:
         location: The location to fetch the weather for.
     """
     # In real life, we'd fetch the weather from a weather API
-    return "sunny" #try with storm, cloudy, rainy, cyclone
+    return "thunderstorm" #try with storm, cloudy, rainy, cyclone
 
 triage_agent = Agent(
     name="Triage agent",
@@ -49,8 +49,8 @@ triage_agent = Agent(
 )
 
 async def main():
-    user_query = "Give me the weather condition for city of birth of cricketer Sachin Tendulkar. " \
-    "If the weather is good then give me a 1N/2D travel itinerary for that city"
+    user_query = "Give me the city of birth of cricketer Sachin Tendulkar and suggest me a 1N/2D travel itinerary for " \
+                 "that city if the weather is fit for travel"
     result = Runner.run_streamed(triage_agent, user_query)
     async for event in result.stream_events():
         if event.type == "raw_response_event" and isinstance(event.data, ResponseTextDeltaEvent):
