@@ -14,7 +14,7 @@ async def create_ticket(
     and provides the required ticket details.
     """
 
-    url = "https://prod-26.centralindia.logic.azure.com:443/workflows/82b73d48b5714812bdc391fecdaf5b43/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=MG_MfLwxw7HoBq5o59KwMm_0RyieZN3pepEgO3iSChc"
+    url = "<<Your Azure Create Ticket Logic App Endpoint>>"
 
     payload = {
         "subject": subject,
@@ -48,3 +48,4 @@ async def create_ticket(
             "error": "HTTP request failed",
             "details": str(ex)
         }
+
