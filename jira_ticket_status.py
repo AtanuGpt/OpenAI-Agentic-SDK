@@ -11,8 +11,8 @@ async def fetch_ticket_status(ticket_key: str) -> dict:
     with the ticket key passed in the request body.
     """
 
-    url = "https://prod-07.centralindia.logic.azure.com:443/workflows/6198e2052f7a411b8b713e5ce787bbcd/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=yAx04OVAqezT5xBBk0p7c5SGnKfcmpLO1Pj2DyuBK_Q"
-
+    url = "<<Your Azure Get Ticket Status Logic App Endpoint>>"
+ 
     payload = {
         "ticketKey": ticket_key
     }
@@ -47,4 +47,5 @@ async def fetch_ticket_status(ticket_key: str) -> dict:
         return {
             "error": "HTTP request failed",
             "details": str(ex)
+
         }
